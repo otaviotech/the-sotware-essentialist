@@ -7,5 +7,9 @@ export function fizzbuzz(n: number) {
     throw new Error("n must be less than 101");
   }
 
+  if (n % 3 === 0) {
+    return "Fizz";
+  }
+
   return "";
 }
