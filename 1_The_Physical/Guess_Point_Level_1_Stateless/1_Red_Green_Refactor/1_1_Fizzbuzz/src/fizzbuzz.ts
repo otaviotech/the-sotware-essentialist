@@ -7,15 +7,19 @@ export function fizzbuzz(n: number) {
     throw new Error("n must be less than 101");
   }
 
-  if (n % 3 === 0 && n % 5 === 0) {
+  const fizz = n % 3 === 0;
+  const buzz = n % 5 === 0;
+  const fizzbuzz = fizz && buzz;
+
+  if (fizzbuzz) {
     return "FizzBuzz";
   }
 
-  if (n % 3 === 0) {
+  if (fizz) {
     return "Fizz";
   }
 
-  if (n % 5 === 0) {
+  if (buzz) {
     return "Buzz";
   }
 
