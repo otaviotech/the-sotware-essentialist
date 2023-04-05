@@ -36,4 +36,16 @@ describe("fizzbuzz", () => {
   it("should return FizzBuzz if n = 30 (n is divisible by 3 and 5)", () => {
     expect(fizzbuzz(30)).toBe("FizzBuzz");
   });
+
+  it("should return '1' if n = 1 (n is neither divisible by 3 nor 5)", () => {
+    expect(fizzbuzz(1)).toBe("1");
+  });
+
+  it("should return '2' if n = 2 (n is neither divisible by 3 nor 5)", () => {
+    expect(fizzbuzz(2)).toBe("2");
+  });
+
+  it("should return '4' if n = 4 (n is neither divisible by 3 nor 5)", () => {
+    expect(fizzbuzz(4)).toBe("4");
+  });
 });

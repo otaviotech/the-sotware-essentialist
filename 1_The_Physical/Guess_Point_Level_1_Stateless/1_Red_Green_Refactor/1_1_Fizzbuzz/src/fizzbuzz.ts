@@ -19,5 +19,5 @@ export function fizzbuzz(n: number) {
     return "Buzz";
   }
 
-  return "";
+  return n.toString();
 }
