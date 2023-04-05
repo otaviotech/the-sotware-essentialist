@@ -28,4 +28,12 @@ describe("fizzbuzz", () => {
   it("should return 'Buzz' if n = 10 (n is divisible by 5)", () => {
     expect(fizzbuzz(10)).toBe("Buzz");
   });
+
+  it("should return FizzBuzz if n = 15 (n is divisible by 3 and 5)", () => {
+    expect(fizzbuzz(15)).toBe("FizzBuzz");
+  });
+
+  it("should return FizzBuzz if n = 30 (n is divisible by 3 and 5)", () => {
+    expect(fizzbuzz(30)).toBe("FizzBuzz");
+  });
 });
