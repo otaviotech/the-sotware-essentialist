@@ -20,4 +20,12 @@ describe("fizzbuzz", () => {
   it("should return 'Fizz' if n = 6 (n is divisible by 3)", () => {
     expect(fizzbuzz(6)).toBe("Fizz");
   });
+
+  it("should return 'Buzz' if n = 5 (n is divisible by 5)", () => {
+    expect(fizzbuzz(5)).toBe("Buzz");
+  });
+
+  it("should return 'Buzz' if n = 10 (n is divisible by 5)", () => {
+    expect(fizzbuzz(10)).toBe("Buzz");
+  });
 });

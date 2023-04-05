@@ -11,5 +11,9 @@ export function fizzbuzz(n: number) {
     return "Fizz";
   }
 
+  if (n % 5 === 0) {
+    return "Buzz";
+  }
+
   return "";
 }
