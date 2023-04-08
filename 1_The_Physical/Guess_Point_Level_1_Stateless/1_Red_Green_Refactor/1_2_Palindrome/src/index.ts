@@ -1,6 +1,7 @@
 export class PalindromeChecker {
   static isPalindrome(word: string): boolean {
-    const reversed = word.split("").reverse().join("");
-    return word.toLocaleLowerCase() === reversed.toLocaleLowerCase();
+    const reversed = word.split(" ").join("").split("").reverse().join("");
+    const w = word.split(" ").join("");
+    return w.toLocaleLowerCase() === reversed.toLocaleLowerCase();
   }
 }
