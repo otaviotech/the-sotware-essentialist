@@ -1,7 +1,16 @@
+function withoutSpaces(str: string): string {
+  return str.replace(/\s/g, "");
+}
+
+function reversed(str: string): string {
+  return str.split("").reverse().join("");
+}
+
 export class PalindromeChecker {
   static isPalindrome(word: string): boolean {
-    const reversed = word.split(" ").join("").split("").reverse().join("");
-    const w = word.split(" ").join("");
-    return w.toLocaleLowerCase() === reversed.toLocaleLowerCase();
+    return (
+      reversed(withoutSpaces(word.toLowerCase())) ===
+      withoutSpaces(word.toLowerCase())
+    );
   }
 }
